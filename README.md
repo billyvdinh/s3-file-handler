@@ -13,3 +13,14 @@ git clone https://github.com/gold-developer/s3-file-uploader.git
 ## Deploy project
 - cd s3-file-handler/
 - serverless deploy
+
+## Test prject
+
+### Create virtualenv for running script.
+ - python3 -m venv env
+
+### Install boto3 package
+ - pip install boto3
+
+### Run test script
+ - python file-uploader.py <file path to upload s3 bucket>
