@@ -18,6 +18,7 @@ git clone https://github.com/mbpup/s3-file-handler.git
 
 ### Create virtualenv for running script.
  - python3 -m venv env
+ - source env/bin/activate
 
 ### Install boto3 package
  - pip install boto3
