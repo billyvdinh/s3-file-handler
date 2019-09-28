@@ -14,7 +14,7 @@ git clone https://github.com/mbpup/s3-file-handler.git
 - cd s3-file-handler/
 - serverless deploy
 
-## Test prject
+## Test project
 
 ### Create virtualenv for running script.
  - python3 -m venv env
