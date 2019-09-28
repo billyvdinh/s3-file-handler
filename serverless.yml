@@ -18,16 +18,9 @@ app: s3-file-handler
 custom:
   bucket: s3-file-handler-bucket
 
-# You can pin your service to only deploy with a specific Serverless version
-# Check out our docs for more details
-# frameworkVersion: "=X.X.X"
-
 provider:
   name: aws
   runtime: python3.7
-
-# you can overwrite defaults here
-#  stage: dev
   region: us-east-1
 
 # you can add statements to the Lambda function's IAM Role here
@@ -35,7 +28,7 @@ provider:
     - Effect: "Allow"
       Action:
         - "s3:*"
-      Resource: "*"
+      Resource: { "Fn::Join": ["", ["arn:aws:s3:::${self:custom.bucket}", "/*" ] ] }
 
 functions:
   main:
