@@ -23,4 +23,4 @@ git clone https://github.com/gold-developer/s3-file-uploader.git
  - pip install boto3
 
 ### Run test script
- - python file-uploader.py <file path to upload s3 bucket>
+ - python file-uploader.py [file path to upload s3 bucket]
